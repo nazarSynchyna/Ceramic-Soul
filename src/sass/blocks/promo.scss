@@ -62,8 +62,9 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 450px;
+      width: clamp(450px, 37.5vw, 640px);
       height: 633px;
+      object-fit: cover;
     }
 
     &__title {
@@ -80,12 +81,11 @@
     }
 
     &__potter {
-      width: 640px;
       height: 900px;
     }
 
     &__title {
-      padding-left: 622px;
+      padding-left: 642px;
       padding-top: 384px;
     }
 
