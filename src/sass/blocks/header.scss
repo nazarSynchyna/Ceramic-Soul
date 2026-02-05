@@ -1,8 +1,10 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__logo {
     width: 100px;
@@ -23,6 +25,10 @@
       }
     }
   }
+
+  &__nav {
+    display: none;
+  }
 }
 
 .burger {
@@ -37,5 +43,32 @@
     background-color: $dark;
     width: 20px;
     height: 1px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__nav {
+      display: block;
+      margin-top: 20px;
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 0;
+        list-style-type: none;
+      }
+    }
+
+    &__link {
+      font-weight: 400;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $dark;
+      text-decoration: none;
+    }
+  }
+  .burger {
+    visibility: hidden;
   }
 }
