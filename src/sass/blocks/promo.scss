@@ -71,3 +71,31 @@
     }
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .promo {
+    padding-top: 40px;
+    &__wrapper {
+      margin-top: 79px;
+    }
+
+    &__potter {
+      width: 640px;
+      height: 900px;
+    }
+
+    &__title {
+      padding-left: 622px;
+      padding-top: 384px;
+    }
+
+    &__img {
+      width: 330px;
+      height: 460px;
+    }
+
+    &__btn {
+      margin: 50px auto 0 auto;
+    }
+  }
+}
