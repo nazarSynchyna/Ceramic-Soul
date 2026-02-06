@@ -51,17 +51,27 @@
     }
 
     &__img {
-        margin-top: 60px;
+      margin-top: 60px;
     }
 
     &__col {
-        padding: 0 10px;
+      padding: 0 10px;
     }
 
     &__text {
-        &_fixed {
-            width: 556px;
-        }
+      &_fixed {
+        width: 556px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .activities {
+    padding-top: 100px;
+
+    &__text {
+      margin-top: 30px;
     }
   }
 }
