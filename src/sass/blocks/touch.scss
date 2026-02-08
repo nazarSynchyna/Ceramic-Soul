@@ -180,8 +180,13 @@
     &__textarea {
       width: 300px;
     }
+
     &__decor {
       right: 75px;
+    }
+
+    &__col {
+        width: auto;
     }
   }
 }
