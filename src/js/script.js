@@ -16,8 +16,8 @@ try {
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".fa-angle-right",
+      prevEl: ".fa-angel-left",
     },
 
     mousewheel: true,
