@@ -25,6 +25,14 @@
   }
 }
 
+.btn-submit {
+  @include button;
+  color: $light;
+  border: 1px solid $light;
+  width: 90px;
+  height: 40px;
+}
+
 @media screen and (min-width: 1200px) {
   .btn-default {
     &:hover {
