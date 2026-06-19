@@ -118,9 +118,24 @@
 
   &__copyright {
     margin-top: 40px;
+    padding-bottom: 50px;
     font-weight: 400;
     font-size: 14px;
     color: $light;
     text-align: center;
   }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__newsletter {
+            width: 100%;
+        }
+    }
 }
