@@ -2,6 +2,11 @@
 
 .works {
   padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__wrapper {
+    position: relative;
+  }
 
   &__slider {
     margin-top: 40px;
@@ -47,9 +52,6 @@
 
 @media screen and (min-width: 1200px) {
   .works {
-    &__wrapper {
-      position: relative;
-    }
     &__slider {
       margin: 80px 40px 0 40px;
     }
@@ -88,6 +90,8 @@
 
 @media screen and (min-width: 1920px) {
   .works {
+    padding-bottom: 100px;
+
     &__slider {
       margin: 80px 85px 0 85px;
     }
