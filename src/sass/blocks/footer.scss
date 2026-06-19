@@ -1,0 +1,126 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer {
+  background: $dark;
+  padding-top: 50px 0;
+
+  &__spaced {
+    margin-top: 60px;
+  }
+
+  &__wrapper {
+    padding-top: 50px;
+  }
+
+  &__header {
+    text-align: left;
+  }
+
+  &__text {
+    margin-top: 40px;
+    color: $light;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__form {
+    margin-top: 40px;
+  }
+
+  &__input {
+    display: block;
+    width: 293px;
+    padding-bottom: 15px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid $ui-active;
+    font-weight: 400;
+    font-size: 14px;
+    color: $ui-active;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      color: $ui-active;
+    }
+  }
+
+  &__check-block {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: $light;
+    a {
+      margin-left: 3px;
+      text-decoration: none;
+      color: #a22dc6;
+    }
+  }
+  &__checkbox {
+    margin-right: 15px;
+  }
+  &__form-btn {
+    margin-top: 20px;
+  }
+
+  &__columns {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 66px;
+    row-gap: 40px;
+  }
+
+  &__nav {
+    margin-top: 40px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+
+  &__column {
+    a {
+      color: $light;
+      font-weight: 400;
+      font-size: 16px;
+      text-decoration: none;
+      list-style-type: none;
+    }
+  }
+
+  &__social {
+    margin-top: 40px;
+    &-block {
+      margin-top: 40px;
+      display: flex;
+      column-gap: 10px;
+      padding: 0;
+      list-style-type: none;
+      a {
+        display: block;
+        color: $light;
+        text-decoration: none;
+        font-size: 24px;
+      }
+      a:before {
+        margin: 0;
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $light;
+    text-align: center;
+  }
+}

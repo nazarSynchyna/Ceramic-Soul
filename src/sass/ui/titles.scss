@@ -20,6 +20,7 @@
 
 .title-footer {
   @include title;
+  color: $light;
   font-size: 16px;
 }
 
