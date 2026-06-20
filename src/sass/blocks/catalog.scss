@@ -13,7 +13,7 @@
     column-gap: 50px;
     margin-top: 60px;
     border: 1px solid $dark;
-    padding: 13px 35px;
+    padding: 13px 25px;
   }
   &__tab {
     position: relative;
@@ -39,7 +39,6 @@
     margin-top: 60px;
 
     &-item {
-      display: flex;
       flex-direction: column;
       row-gap: 20px;
     }
@@ -67,6 +66,54 @@
       font-weight: 500;
       font-size: 16px;
       color: #000;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .catalog {
+    &__tabs {
+      width: 460px;
+    }
+    &__content {
+      padding: 10px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 1px;
+        background-color: $dark;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 200px;
+        background-color: $dark;
+      }
+      &-item {
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+    }
+    &__card {
+      width: 340px;
+      min-height: 274px;
+      &-img {
+        height: 198px;
+        object-fit: cover;
+      }
+      &-price {
+        margin-top: 10px;
+      }
     }
   }
 }
