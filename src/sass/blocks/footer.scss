@@ -2,7 +2,6 @@
 
 .footer {
   background: $dark;
-  padding-top: 50px 0;
 
   &__spaced {
     margin-top: 60px;
@@ -13,7 +12,7 @@
   }
 
   &__header {
-    text-align: left;
+    text-align: left !important;
   }
 
   &__text {
