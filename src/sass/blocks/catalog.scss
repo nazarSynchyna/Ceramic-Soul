@@ -128,3 +128,25 @@
         }
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .catalog {
+        padding-top: 40px;
+        &__title {
+			margin-top: 100px;
+		}
+        &__content {
+            &-item {
+                row-gap: 25px;
+                column-gap: 83px;
+            }
+        }
+        &__card {
+            width: 285px;
+            min-height: 250px;
+            &-img {
+                height: 180px;
+            }
+        }
+    }
+}
