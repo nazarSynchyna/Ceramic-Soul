@@ -1,4 +1,5 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
 
 .blog {
   padding-top: 50px;
@@ -34,7 +35,8 @@
   }
 
   &__text {
-    padding: 25px 25px 25px 25px;
+    margin-top: 25px;
+    padding: 0 25px 25px 25px;
     font-weight: 400;
     font-size: 16px;
     color: $dark;
@@ -43,5 +45,26 @@
   &__img {
     max-inline-size: calc(100% + 2px);
     transform: translateX(-1px) translateY(-1px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog {
+    &__wrapper {
+      padding: 25px 25px 0 25px;
+      position: relative;
+      @include angle-decoration;
+    }
+
+    &__text {
+      margin-top: 15px;
+    }
+
+    &__data {
+      &-column {
+        gap: 0;
+        justify-content: space-between;
+      }
+    }
   }
 }
