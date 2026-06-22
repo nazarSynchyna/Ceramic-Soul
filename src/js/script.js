@@ -1,5 +1,6 @@
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
+import JustValidate from "just-validate";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -70,4 +71,66 @@ try {
 
   // Показываем первый контент при загрузке
   contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
+} catch (e) {}
+
+try {
+  const validator = new JustValidate("form");
+
+  validator
+    .addField("#name", [
+      {
+        rule: "required",
+        errorMessage: "Please fill the name",
+      },
+      {
+        rule: "minLength",
+        value: 2,
+        errorMessage: "Min 2 char!",
+      },
+    ])
+    .addField("#email", [
+      {
+        rule: "required",
+        errorMessage: "Please fill email",
+      },
+      {
+        rule: "email",
+        errorMessage:
+          "The email address format is incorrect. Check for the presence of the @ symbol and the correct domain (for example, example@gmail.com)",
+      },
+    ])
+    .addField(
+      "#question",
+      [
+        {
+          rule: "required",
+          errorMessage:
+            "Please write your question. The field cannot be empty",
+        },
+        {
+          rule: "minLength",
+          value: 5,
+          errorMessage: "The question text is too short",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#question")
+          .parentElement.querySelector(".error-message"),
+      },
+    )
+    .addField(
+      "#checkbox",
+      [
+        {
+          rule: "required",
+          errorMessage: "To continue, you must accept the terms",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#checkbox")
+          .parentElement.parentElement.querySelector(".checkbox-error-message"),
+      },
+    );
 } catch (e) {}
