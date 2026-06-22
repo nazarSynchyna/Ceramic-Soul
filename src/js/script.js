@@ -104,8 +104,7 @@ try {
       [
         {
           rule: "required",
-          errorMessage:
-            "Please write your question. The field cannot be empty",
+          errorMessage: "Please write your question. The field cannot be empty",
         },
         {
           rule: "minLength",
@@ -131,6 +130,45 @@ try {
         errorsContainer: document
           .querySelector("#checkbox")
           .parentElement.parentElement.querySelector(".checkbox-error-message"),
+      },
+    );
+} catch (e) {}
+
+try {
+  const validatorFooter = new JustValidate(".footer__form");
+
+  validatorFooter
+    .addField(
+      "#footer__email",
+      [
+        {
+          rule: "required",
+          errorMessage: "Please fill email",
+        },
+        {
+          rule: "email",
+          errorMessage:
+            "The email address format is incorrect. Check for the presence of the @ symbol and the correct domain (for example, example@gmail.com)",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#footer__email")
+          .parentElement.querySelector(".email-error-message"),
+      },
+    )
+    .addField(
+      "#footer__checkbox",
+      [
+        {
+          rule: "required",
+          errorMessage: "To continue, you must accept the terms",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#footer__checkbox")
+          .parentElement.parentElement.querySelector(".check-error-message"),
       },
     );
 } catch (e) {}

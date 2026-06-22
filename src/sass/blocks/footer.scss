@@ -3,6 +3,14 @@
 .footer {
   background: $dark;
 
+  .just-validate-error-field {
+    outline: transparent;
+    border-bottom: 1px solid $ui-error;
+    &::placeholder {
+      color: $ui-error;
+    }
+  }
+
   &__spaced {
     margin-top: 60px;
   }
@@ -159,11 +167,11 @@
     }
 
     &__wrapper {
-        padding-top: 80px;
+      padding-top: 80px;
     }
 
     &__copyright {
-        margin-top: 18px;
+      margin-top: 18px;
     }
   }
 }
