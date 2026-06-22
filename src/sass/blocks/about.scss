@@ -24,3 +24,11 @@
     color: $dark;
   }
 }
+
+@media screen and (min-width: 768px) {
+    .about {
+        &__column {
+            padding: 0 60px;
+        }
+    }
+}
