@@ -26,21 +26,39 @@
 }
 
 @media screen and (min-width: 768px) {
-    .about {
-        &__column {
-            padding: 0 60px;
-        }
+  .about {
+    &__column {
+      padding: 0 60px;
     }
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .about {
-        &__wrapper {
-            gap: 0;
-        }
-
-        &__column {
-			padding: 0 20px 0 0;
-		}
+  .about {
+    &__wrapper {
+      gap: 0;
     }
+
+    &__column {
+      padding: 0 20px 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about {
+    padding-top: 40px;
+
+    &__title {
+      margin-top: 100px;
+    }
+
+    &__wrapper {
+      margin-top: 100px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+  }
 }
