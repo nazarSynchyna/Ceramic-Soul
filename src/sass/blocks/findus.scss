@@ -11,3 +11,14 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .findus {
+        &__map {
+            padding: 0 29px;
+            iframe {
+                height: 400px;
+            }
+        }
+    }
+}
