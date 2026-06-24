@@ -6,3 +6,15 @@
     transform: translateX(0);
   }
 }
+
+@keyframes moveAndRotate {
+  0% {
+    transform: translateY(0%) rotate(8deg);
+  }
+  50% {
+    transform: translateY(-100%) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0%) rotate(360deg);
+  }
+}
