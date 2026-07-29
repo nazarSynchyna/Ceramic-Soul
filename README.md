@@ -5,10 +5,10 @@ The project is built with **Vite 7** and uses modular **SCSS**, interactive UI b
 
 ---
 
-## 🔗 Demo
+## Demo
 
 Check out the live website on GitHub Pages:  
-👉 **[Live Demo](https://nazarsynchyna.github.io/ceramic-soul/)**
+**[Live Demo](https://nazarsynchyna.github.io/ceramic-soul/)**
 
 ---
 
