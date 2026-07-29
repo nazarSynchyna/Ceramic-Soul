@@ -5,6 +5,13 @@ The project is built with **Vite 7** and uses modular **SCSS**, interactive UI b
 
 ---
 
+## 🔗 Demo
+
+Check out the live website on GitHub Pages:  
+👉 **[Live Demo](https://nazarsynchyna.github.io/ceramic-soul/)**
+
+---
+
 ## Overview
 
 Ceramic Soul is implemented as a static, multi-page web project with the following public pages:
